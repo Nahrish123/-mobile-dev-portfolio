@@ -1,102 +1,98 @@
-# 📂 Selected Projects
+# Featured Projects
 
-I have worked on multiple Android and mobile application projects, including development, testing, build preparation, and release support.
+A selection of mobile applications and games I've worked on.
 
-## 🎮 Skippy Skate Sprint
+---
 
+## 🎪 Clown Hunt: Circus Arena
+
+A fast-paced mobile arcade game built around an entertaining circus arena experience.
+
+**Role:** Mobile App Developer  
 **Platform:** Android  
-**Category:** Sports / Arcade Game
+**Focus:** Mobile game development, UI implementation, gameplay experience
 
-A mobile sports game featuring ice-hockey-inspired gameplay and a winter environment.
+### Highlights
+- Mobile-first gameplay experience
+- Interactive game screens and navigation
+- Polished visual presentation
+- Android-ready app implementation
 
-**My work included:**
+![Clown Hunt: Circus Arena](portfolio_project_images/clown-hunt-circus-arena.jpg)
+
+---
+
+## 🛹 Skippy Skate Sprint
+
+A mobile skating game focused on quick, engaging gameplay and a colorful player experience.
+
+**Role:** Mobile App Developer  
+**Platform:** Android  
+**Focus:** Game UI, gameplay screens, mobile optimization
+
+### Highlights
+- Skating-themed gameplay
+- Clean and responsive mobile interface
+- Interactive gameplay flow
+- Designed for an engaging Android experience
+
+![Skippy Skate Sprint](portfolio_project_images/skippy-skate-sprint.jpg)
+
+---
+
+## 🏀 Airy Rim Adventure
+
+A basketball-themed mobile adventure game combining sports gameplay with an interactive progression experience.
+
+**Role:** Mobile App Developer  
+**Platform:** Android  
+**Focus:** Game development, UI, mobile gameplay
+
+### Highlights
+- Basketball-focused gameplay
+- Interactive game experience
+- Mobile-friendly interface
 - Android application development
-- Mobile UI implementation
-- Game functionality
-- Testing and optimization
-- Google Play release workflow
+
+![Airy Rim Adventure](portfolio_project_images/airy-rim-adventure.jpg)
 
 ---
 
-## 📱 Betano
+## 🏆 Elynpus Certificate Maker
 
-**Platform:** Android
+A mobile utility application designed to create and manage certificates through a simple interface.
 
-An Android application project that I worked on as part of my mobile development experience.
+**Role:** Mobile App Developer  
+**Platform:** Android  
+**Focus:** Utility app development, UI implementation, user workflow
 
-**My work included:**
-- Android application development
-- Build preparation
-- Testing
-- Release support
-- Google Play Console workflow
+### Highlights
+- Certificate creation workflow
+- Simple and accessible interface
+- Mobile-optimized experience
+- Practical utility functionality
 
----
-
-## 📱 Breezy Dig Dash
-
-**Platform:** Android
-
-An Android application project developed and prepared through the Google Play development workflow.
-
-**My work included:**
-- Android development
-- Application build and testing
-- Release preparation
-- Google Play Console workflow
+![Elynpus Certificate Maker](portfolio_project_images/elynpus-certificate-maker.jpg)
 
 ---
 
-## 🏀 Catch Ball
+## 🛠️ Development Skills
 
-**Platform:** Android
+Across these projects, I work with modern mobile development technologies and can handle:
 
-A mobile application project that I worked on during development and release preparation.
-
-**My work included:**
-- Android development
-- Application testing
-- Build preparation
-- Release workflow
-
----
-
-## 🥚 Egg Vortex
-
-**Platform:** Android
-
-An Android application project that I worked on through the development and release process.
-
-**My work included:**
-- Android development
-- Build and testing
-- Application improvements
-- Release workflow
-
----
-
-## 🛠️ Mobile Development Experience
-
-My experience includes working on mobile applications through different stages of the development lifecycle.
-
-### Areas of Experience
-
-- Android App Development
-- iOS App Development
+- Android & iOS development
 - Flutter
 - React Native
-- WebView Applications
-- Unity
-- Mobile UI Development
-- Application Testing
-- Build Preparation
-- Google Play Publishing
-- App Maintenance & Updates
+- Swift
+- API and backend integration
+- WebView integration
+- Mobile UI implementation
+- Game development with Unity
+- App publishing and deployment
+- CI/CD workflows
 
-## 📞 Contact
+## 💼 Available for New Projects
 
-**Telegram:** @DEV9681
+Need a mobile app, game, MVP, or custom mobile solution?
 
-**GitHub:** https://github.com/Nahrish123
-
-For mobile app development, WebView applications, app publishing, or technical support, feel free to contact me.
+**I'm available for freelance development projects and collaborations.**
