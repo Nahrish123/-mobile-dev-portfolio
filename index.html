@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Nahrish123 | Mobile App Developer</title>
+  <title>Nahrish | Mobile App Developer</title>
 
-  <meta name="description" content="Professional mobile app developer specializing in Android, iOS, Flutter, React Native and backend integration.">
+  <meta name="description" content="Nahrish is a mobile app developer specializing in Android, iOS, Flutter, React Native, API integration and modern mobile applications.">
 
   <style>
     * {
@@ -21,8 +21,8 @@
 
     body {
       font-family: Arial, Helvetica, sans-serif;
-      background: #0b0f19;
-      color: #ffffff;
+      background: #080b12;
+      color: #fff;
       line-height: 1.6;
     }
 
@@ -31,58 +31,101 @@
       text-decoration: none;
     }
 
+    img {
+      width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1150px;
+      margin: auto;
+    }
+
+    /* NAVIGATION */
     nav {
       position: fixed;
       top: 0;
+      left: 0;
       width: 100%;
-      padding: 18px 7%;
-      background: rgba(11, 15, 25, 0.92);
-      border-bottom: 1px solid #202638;
       z-index: 1000;
+      background: rgba(8, 11, 18, 0.94);
+      border-bottom: 1px solid #202637;
+      backdrop-filter: blur(12px);
+    }
+
+    .nav-inner {
+      width: 90%;
+      max-width: 1150px;
+      margin: auto;
+      min-height: 70px;
       display: flex;
-      justify-content: space-between;
       align-items: center;
+      justify-content: space-between;
     }
 
     .logo {
-      font-size: 22px;
-      font-weight: bold;
+      font-size: 24px;
+      font-weight: 800;
     }
 
     .logo span {
       color: #6ea8fe;
     }
 
-    nav ul {
+    .nav-links {
       display: flex;
       gap: 25px;
       list-style: none;
     }
 
-    nav a:hover {
+    .nav-links a {
+      color: #c9d1df;
+      font-size: 14px;
+    }
+
+    .nav-links a:hover {
       color: #6ea8fe;
     }
 
-    section {
-      padding: 90px 7%;
+    .menu-btn {
+      display: none;
+      background: none;
+      border: 1px solid #35405a;
+      color: white;
+      padding: 8px 12px;
+      border-radius: 7px;
+      font-size: 20px;
     }
 
+    /* HERO */
     .hero {
       min-height: 100vh;
       display: flex;
       align-items: center;
-      justify-content: center;
       text-align: center;
-      padding-top: 130px;
+      padding: 120px 0 80px;
     }
 
     .hero-content {
       max-width: 850px;
+      margin: auto;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 7px 15px;
+      border: 1px solid #33415f;
+      border-radius: 50px;
+      color: #9fbdf1;
+      font-size: 13px;
+      margin-bottom: 22px;
     }
 
     .hero h1 {
-      font-size: clamp(42px, 8vw, 75px);
-      margin-bottom: 15px;
+      font-size: clamp(45px, 8vw, 78px);
+      line-height: 1.05;
+      margin-bottom: 20px;
     }
 
     .hero h1 span {
@@ -90,107 +133,198 @@
     }
 
     .hero h2 {
-      font-size: 25px;
-      margin-bottom: 20px;
-      color: #c9d1e3;
+      color: #d4dbea;
+      font-size: clamp(20px, 4vw, 30px);
+      margin-bottom: 18px;
     }
 
     .hero p {
-      color: #9da7ba;
+      color: #929db2;
       font-size: 18px;
-      margin-bottom: 30px;
+      max-width: 720px;
+      margin: auto auto 30px;
     }
 
     .buttons {
       display: flex;
       justify-content: center;
-      gap: 15px;
       flex-wrap: wrap;
+      gap: 13px;
     }
 
     .btn {
       display: inline-block;
-      padding: 13px 25px;
-      border-radius: 8px;
+      padding: 13px 22px;
+      border-radius: 9px;
       background: #6ea8fe;
-      color: #07101f;
-      font-weight: bold;
+      color: #07101d;
+      font-weight: 700;
+      transition: 0.2s;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
     }
 
     .btn.secondary {
       background: transparent;
+      border: 1px solid #34405a;
       color: white;
-      border: 1px solid #39435a;
     }
 
-    .btn:hover {
-      transform: translateY(-2px);
+    .btn.telegram {
+      background: #229ed9;
+      color: white;
+    }
+
+    .btn.whatsapp {
+      background: #25d366;
+      color: white;
+    }
+
+    /* GENERAL */
+    section {
+      padding: 95px 0;
     }
 
     .section-title {
       text-align: center;
-      font-size: 38px;
-      margin-bottom: 45px;
+      font-size: 40px;
+      margin-bottom: 15px;
     }
 
-    .about {
+    .section-subtitle {
+      text-align: center;
+      max-width: 650px;
+      margin: 0 auto 45px;
+      color: #8f9aae;
+    }
+
+    /* ABOUT */
+    .about-box {
       max-width: 850px;
       margin: auto;
       text-align: center;
-      color: #aeb7c9;
+      color: #aab4c7;
       font-size: 17px;
     }
 
+    /* STATS */
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+      margin-top: 45px;
+    }
+
+    .stat {
+      background: #101521;
+      border: 1px solid #222c40;
+      border-radius: 14px;
+      padding: 25px;
+      text-align: center;
+    }
+
+    .stat h3 {
+      color: #6ea8fe;
+      font-size: 30px;
+      margin-bottom: 5px;
+    }
+
+    .stat p {
+      color: #8994a8;
+      font-size: 14px;
+    }
+
+    /* SKILLS */
     .skills {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 18px;
-      max-width: 1000px;
-      margin: auto;
+      gap: 15px;
     }
 
     .skill {
-      background: #121827;
-      border: 1px solid #242d42;
+      background: #101521;
+      border: 1px solid #222c40;
+      padding: 22px;
       border-radius: 12px;
-      padding: 25px;
       text-align: center;
-      font-weight: bold;
+      font-weight: 700;
+      transition: 0.2s;
     }
 
+    .skill:hover {
+      transform: translateY(-4px);
+      border-color: #6ea8fe;
+    }
+
+    /* PROJECTS */
     .projects {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 22px;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
     }
 
     .project {
-      background: #121827;
-      border: 1px solid #242d42;
-      border-radius: 14px;
-      padding: 25px;
+      background: #101521;
+      border: 1px solid #222c40;
+      border-radius: 15px;
+      overflow: hidden;
+    }
+
+    .project-image {
+      height: 260px;
+      object-fit: cover;
+      background: #151b28;
+    }
+
+    .project-content {
+      padding: 24px;
     }
 
     .project h3 {
-      margin-bottom: 12px;
       color: #6ea8fe;
+      margin-bottom: 9px;
+      font-size: 21px;
     }
 
     .project p {
-      color: #aeb7c9;
+      color: #98a3b7;
+      font-size: 15px;
     }
 
+    .project-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin-top: 15px;
+    }
+
+    .tag {
+      border: 1px solid #303b52;
+      padding: 4px 9px;
+      border-radius: 50px;
+      font-size: 11px;
+      color: #aeb9cc;
+    }
+
+    /* SERVICES */
     .services {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
     }
 
     .service {
-      padding: 28px;
-      background: #121827;
-      border: 1px solid #242d42;
+      background: #101521;
+      border: 1px solid #222c40;
       border-radius: 14px;
+      padding: 27px;
+    }
+
+    .service-icon {
+      font-size: 30px;
+      margin-bottom: 15px;
     }
 
     .service h3 {
@@ -198,40 +332,124 @@
     }
 
     .service p {
-      color: #aeb7c9;
+      color: #929db1;
+      font-size: 14px;
     }
 
-    .contact {
+    /* WHY ME */
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .why-card {
+      background: #101521;
+      border: 1px solid #222c40;
+      padding: 28px;
+      border-radius: 14px;
+    }
+
+    .why-card h3 {
+      margin-bottom: 9px;
+    }
+
+    .why-card p {
+      color: #929db1;
+      font-size: 14px;
+    }
+
+    /* CONTACT */
+    .contact-box {
+      max-width: 850px;
+      margin: auto;
       text-align: center;
+      background: #101521;
+      border: 1px solid #222c40;
+      border-radius: 18px;
+      padding: 50px 25px;
     }
 
-    .contact p {
-      color: #aeb7c9;
+    .contact-box p {
+      color: #9ba5b8;
       margin-bottom: 25px;
     }
 
-    footer {
-      text-align: center;
-      padding: 30px;
-      border-top: 1px solid #202638;
-      color: #7f899d;
+    .contact-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
     }
 
-    @media (max-width: 650px) {
-      nav {
-        padding: 15px 5%;
+    footer {
+      border-top: 1px solid #202637;
+      text-align: center;
+      padding: 30px;
+      color: #737e92;
+      font-size: 13px;
+    }
+
+    /* MOBILE */
+    @media (max-width: 850px) {
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: #0b0f18;
+        padding: 20px;
+        flex-direction: column;
+        text-align: center;
+        border-bottom: 1px solid #222c40;
       }
 
-      nav ul {
-        display: none;
+      .nav-links.active {
+        display: flex;
+      }
+
+      .menu-btn {
+        display: block;
+      }
+
+      .stats {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .services {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .why-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .projects {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 550px) {
+      .stats,
+      .services {
+        grid-template-columns: 1fr;
       }
 
       section {
-        padding: 75px 5%;
+        padding: 75px 0;
       }
 
-      .hero {
-        padding-top: 110px;
+      .section-title {
+        font-size: 32px;
+      }
+
+      .hero h1 {
+        font-size: 48px;
+      }
+
+      .hero p {
+        font-size: 16px;
       }
     }
   </style>
@@ -240,167 +458,437 @@
 <body>
 
   <nav>
-    <div class="logo">Nahrish<span>.</span></div>
+    <div class="nav-inner">
+      <a href="#home" class="logo">Nahrish<span>.</span></a>
 
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+      <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
   </nav>
 
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Hi, I'm <span>Nahrish</span></h1>
+  <main>
 
-      <h2>Mobile App Developer</h2>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="container hero-content">
 
-      <p>
-        I build modern Android and iOS applications with clean,
-        responsive interfaces and reliable backend integrations.
-      </p>
+        <div class="badge">Available for Mobile App Projects</div>
 
-      <div class="buttons">
-        <a href="#projects" class="btn">View My Work</a>
-        <a href="#contact" class="btn secondary">Contact Me</a>
-      </div>
-    </div>
-  </section>
+        <h1>Hi, I'm <span>Nahrish</span></h1>
 
-  <section id="about">
-    <h2 class="section-title">About Me</h2>
+        <h2>Mobile App Developer</h2>
 
-    <div class="about">
-      <p>
-        I'm a mobile app developer focused on building high-quality
-        applications for Android and iOS. I work with Flutter,
-        React Native and native mobile technologies, and I can also
-        integrate APIs, backend services and WebViews into applications.
-      </p>
-
-      <br>
-
-      <p>
-        I enjoy turning ideas into functional products, from early
-        prototypes and MVPs to production-ready applications.
-      </p>
-    </div>
-  </section>
-
-  <section id="skills">
-    <h2 class="section-title">My Skills</h2>
-
-    <div class="skills">
-      <div class="skill">Flutter</div>
-      <div class="skill">React Native</div>
-      <div class="skill">Swift</div>
-      <div class="skill">Android Development</div>
-      <div class="skill">iOS Development</div>
-      <div class="skill">Unity</div>
-      <div class="skill">API Integration</div>
-      <div class="skill">Backend Integration</div>
-      <div class="skill">WebView Apps</div>
-      <div class="skill">CI/CD</div>
-    </div>
-  </section>
-
-  <section id="projects">
-    <h2 class="section-title">Featured Projects</h2>
-
-    <div class="projects">
-
-      <div class="project">
-        <h3>Mobile Applications</h3>
         <p>
-          Android and iOS applications built with modern mobile
-          development technologies and responsive interfaces.
+          I design and build modern Android and iOS applications,
+          cross-platform products, MVPs and API-powered mobile experiences.
         </p>
-      </div>
 
-      <div class="project">
-        <h3>Cross-Platform Apps</h3>
-        <p>
-          Cross-platform applications developed with Flutter and
-          React Native for efficient Android and iOS deployment.
+        <div class="buttons">
+          <a href="#projects" class="btn">View My Work</a>
+          <a href="#contact" class="btn secondary">Hire Me</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="container">
+
+        <h2 class="section-title">About Me</h2>
+
+        <p class="section-subtitle">
+          Turning ideas into functional mobile products.
         </p>
-      </div>
 
-      <div class="project">
-        <h3>API & Backend Integration</h3>
-        <p>
-          Applications connected to APIs and backend services for
-          authentication, data processing and dynamic content.
+        <div class="about-box">
+          <p>
+            I'm a mobile app developer focused on building modern,
+            responsive and practical applications for Android and iOS.
+            I work with Flutter, React Native and native mobile technologies.
+          </p>
+
+          <br>
+
+          <p>
+            I also work with API integration, backend services, WebView
+            applications, CI/CD workflows and Unity projects. My goal is
+            to transform ideas into reliable digital products.
+          </p>
+        </div>
+
+        <div class="stats">
+          <div class="stat">
+            <h3>4+</h3>
+            <p>Years Experience</p>
+          </div>
+
+          <div class="stat">
+            <h3>Android</h3>
+            <p>Development</p>
+          </div>
+
+          <div class="stat">
+            <h3>iOS</h3>
+            <p>Development</p>
+          </div>
+
+          <div class="stat">
+            <h3>24/7</h3>
+            <p>Project Focus</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <div class="container">
+
+        <h2 class="section-title">Tech Stack</h2>
+
+        <p class="section-subtitle">
+          Technologies and tools I use to build mobile products.
         </p>
-      </div>
 
-      <div class="project">
-        <h3>Unity Projects</h3>
-        <p>
-          Interactive mobile experiences and games developed using
-          Unity and modern development workflows.
+        <div class="skills">
+          <div class="skill">Flutter</div>
+          <div class="skill">React Native</div>
+          <div class="skill">Swift</div>
+          <div class="skill">Android</div>
+          <div class="skill">iOS</div>
+          <div class="skill">Unity</div>
+          <div class="skill">API Integration</div>
+          <div class="skill">Backend</div>
+          <div class="skill">WebView</div>
+          <div class="skill">CI/CD</div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="container">
+
+        <h2 class="section-title">My Work</h2>
+
+        <p class="section-subtitle">
+          A selection of mobile development work and project experience.
         </p>
+
+        <div class="projects">
+
+          <article class="project">
+            <img
+              class="project-image"
+              src="6ACB4872-7689-437A-9CCF-9DF07D20F709.png"
+              alt="Mobile app project screenshot"
+            >
+
+            <div class="project-content">
+              <h3>Mobile App Project</h3>
+              <p>
+                A mobile application project demonstrating interface design,
+                application functionality and mobile development.
+              </p>
+
+              <div class="project-tags">
+                <span class="tag">Mobile</span>
+                <span class="tag">Android</span>
+                <span class="tag">UI/UX</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project">
+            <img
+              class="project-image"
+              src="IMG_2397.png"
+              alt="Mobile application screenshot"
+            >
+
+            <div class="project-content">
+              <h3>App Interface</h3>
+              <p>
+                Mobile interface and application experience built with
+                attention to usability and responsive design.
+              </p>
+
+              <div class="project-tags">
+                <span class="tag">UI</span>
+                <span class="tag">Mobile</span>
+                <span class="tag">Development</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project">
+            <img
+              class="project-image"
+              src="IMG_2398.png"
+              alt="Mobile app project"
+            >
+
+            <div class="project-content">
+              <h3>Cross-Platform Project</h3>
+              <p>
+                Cross-platform mobile development focused on delivering
+                a smooth experience across devices.
+              </p>
+
+              <div class="project-tags">
+                <span class="tag">Flutter</span>
+                <span class="tag">Android</span>
+                <span class="tag">iOS</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project">
+            <img
+              class="project-image"
+              src="IMG_2399.png"
+              alt="Application project screenshot"
+            >
+
+            <div class="project-content">
+              <h3>Application Development</h3>
+              <p>
+                Functional mobile application work combining interface
+                design with practical product features.
+              </p>
+
+              <div class="project-tags">
+                <span class="tag">Mobile App</span>
+                <span class="tag">API</span>
+                <span class="tag">UI</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project">
+            <img
+              class="project-image"
+              src="IMG_2400.png"
+              alt="Mobile application screenshot"
+            >
+
+            <div class="project-content">
+              <h3>Mobile Product</h3>
+              <p>
+                A mobile product showcasing application development and
+                modern user interface implementation.
+              </p>
+
+              <div class="project-tags">
+                <span class="tag">Mobile</span>
+                <span class="tag">Android</span>
+                <span class="tag">Product</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project">
+            <img
+              class="project-image"
+              src="IMG_2401.png"
+              alt="Mobile app screenshot"
+            >
+
+            <div class="project-content">
+              <h3>App Development Project</h3>
+              <p>
+                Another example of mobile development work and digital
+                product implementation.
+              </p>
+
+              <div class="project-tags">
+                <span class="tag">App</span>
+                <span class="tag">Development</span>
+                <span class="tag">Mobile</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
       </div>
+    </section>
 
-    </div>
-  </section>
+    <!-- SERVICES -->
+    <section id="services">
+      <div class="container">
 
-  <section id="services">
-    <h2 class="section-title">Services</h2>
+        <h2 class="section-title">Services</h2>
 
-    <div class="services">
-
-      <div class="service">
-        <h3>📱 App Development</h3>
-        <p>
-          Custom Android and iOS applications from idea to production.
+        <p class="section-subtitle">
+          How I can help with your next project.
         </p>
-      </div>
 
-      <div class="service">
-        <h3>⚡ MVP Development</h3>
-        <p>
-          Fast and practical MVP development for testing new product ideas.
+        <div class="services">
+
+          <div class="service">
+            <div class="service-icon">📱</div>
+            <h3>App Development</h3>
+            <p>
+              Custom Android and iOS applications built around your
+              requirements and product goals.
+            </p>
+          </div>
+
+          <div class="service">
+            <div class="service-icon">⚡</div>
+            <h3>MVP Development</h3>
+            <p>
+              Turn an idea into a functional MVP that can be tested
+              and improved quickly.
+            </p>
+          </div>
+
+          <div class="service">
+            <div class="service-icon">🔗</div>
+            <h3>API Integration</h3>
+            <p>
+              Connect applications to APIs, databases and backend
+              services for dynamic functionality.
+            </p>
+          </div>
+
+          <div class="service">
+            <div class="service-icon">🚀</div>
+            <h3>App Deployment</h3>
+            <p>
+              Prepare mobile applications for release and production
+              deployment.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY WORK WITH ME -->
+    <section>
+      <div class="container">
+
+        <h2 class="section-title">Why Work With Me?</h2>
+
+        <p class="section-subtitle">
+          I focus on building practical products and maintaining clear
+          communication throughout the development process.
         </p>
+
+        <div class="why-grid">
+
+          <div class="why-card">
+            <h3>🎯 Goal Focused</h3>
+            <p>
+              I focus on understanding the purpose of a project and
+              building features that support the final goal.
+            </p>
+          </div>
+
+          <div class="why-card">
+            <h3>💡 Problem Solving</h3>
+            <p>
+              I approach technical challenges with practical solutions
+              and attention to application performance.
+            </p>
+          </div>
+
+          <div class="why-card">
+            <h3>🤝 Communication</h3>
+            <p>
+              Clear communication helps keep development organized and
+              makes it easier to turn feedback into improvements.
+            </p>
+          </div>
+
+        </div>
       </div>
+    </section>
 
-      <div class="service">
-        <h3>🔗 API Integration</h3>
-        <p>
-          Connect mobile applications with APIs and backend systems.
-        </p>
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="container">
+
+        <div class="contact-box">
+
+          <h2 class="section-title">Let's Work Together</h2>
+
+          <p>
+            Have an app idea, MVP or mobile development project?
+            Let's build it together.
+          </p>
+
+          <div class="contact-links">
+
+            <a
+              class="btn"
+              href="mailto:bashirmuhyideen192@gmail.com"
+            >
+              📧 Email Me
+            </a>
+
+            <a
+              class="btn telegram"
+              href="https://t.me/DEV9681"
+              target="_blank"
+              rel="noopener"
+            >
+              ✈️ Telegram
+            </a>
+
+            <a
+              class="btn whatsapp"
+              href="https://wa.me/66826843705"
+              target="_blank"
+              rel="noopener"
+            >
+              💬 WhatsApp
+            </a>
+
+            <a
+              class="btn secondary"
+              href="https://github.com/Nahrish123"
+              target="_blank"
+              rel="noopener"
+            >
+              GitHub
+            </a>
+
+          </div>
+
+        </div>
+
       </div>
+    </section>
 
-      <div class="service">
-        <h3>🚀 App Deployment</h3>
-        <p>
-          Assistance with preparing and deploying applications for
-          mobile app stores.
-        </p>
-      </div>
-
-    </div>
-  </section>
-
-  <section id="contact" class="contact">
-    <h2 class="section-title">Let's Work Together</h2>
-
-    <p>
-      Have an app idea or project? Let's turn it into reality.
-    </p>
-
-    <div class="buttons">
-      <a href="mailto:bashirmuhyideen192@gmail.com" class="btn">Email Me</a>
-      <a href="https://github.com/Nahrish123" class="btn secondary">
-        GitHub
-      </a>
-    </div>
-  </section>
+  </main>
 
   <footer>
-    © 2026 Nahrish123. All rights reserved.
+    © 2026 Nahrish. Mobile App Developer.
   </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("active");
+    }
+
+    document.querySelectorAll(".nav-links a").forEach(function(link) {
+      link.addEventListener("click", function() {
+        document.getElementById("navLinks").classList.remove("active");
+      });
+    });
+  </script>
 
 </body>
 </html>
